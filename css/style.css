@@ -30,25 +30,31 @@ div {
 
 #mydiv {
     transform: rotateY(0deg);
-    transition-duration: 1s;
+    transition: transform 5s;
+    transition-timing-function: ease-in;
 
 }
 #mydiv:hover{
-    transform: rotateY(180deg);
+    transform: translate(500px, 0px);
 }
 #mydiv2 {
     transform: rotateX(0deg);
-    transition-duration: 1s;
+    transition: transform 4s, background-color 2s, color 4s;
 
 }
 #mydiv2:hover{
     transform: rotateX(180deg);
+    background-color: grey;
+
 }
 #mydiv3 {
     transform: rotateZ(0deg);
-    transition-duration: 1s;
+    transition-duration: 2s;
+    transition-delay: 3s;
 
 }
 #mydiv3:hover{
     transform: rotateZ(180deg);
+    background-color: forestgreen;
+
 }
